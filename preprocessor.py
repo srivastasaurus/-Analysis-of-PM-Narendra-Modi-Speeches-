@@ -1,9 +1,9 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Fri Jun  1 16:28:18 2018
+Created on Fri Nov  1 16:28:18 2019
 
-@author: Sahit
+@author: Prerna
 """
 
 
@@ -14,7 +14,7 @@ from multiprocessing import Process, Queue
 
 folder = nltk.data.find(
     'speeches/manmohansingh/')
-paths = glob.glob('speeches/manmohansingh/*')
+paths = glob.glob('speeches/PM_Speeches/*')
 
 
 class preprocessor(object):
@@ -44,7 +44,7 @@ class preprocessor(object):
                 [word for sentence in corpusReader.sents() for word in sentence])
         
         place = re.search(r'_([a-zA-Z]+)_.txt$', path)
-        date = re.search( r'/Users/Sahit/Documents/GitHub/BBC_WorkSpace/PM_Speech_Analysis/Speeches/Speeches_Modi_Demo/\d+_(\d+)_([a-zA-Z]+)_(\d+)', path)
+        date = re.search( r'/Users/Prerna/Documents/GitHub/BBC_WorkSpace/PM_Speech_Analysis/Speeches/Speeches_Modi_Demo/\d+_(\d+)_([a-zA-Z]+)_(\d+)', path)
     
         
         #date = re.search(r'^[0-9]+_(\w+)_(\w+)_(\d+)', path)
