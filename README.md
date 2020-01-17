@@ -5,8 +5,8 @@ Aim is to analyze PM Modi's speeches and try to extract some information out of 
 # Extract data out of text files
 
 We first extract as much as data as possible data from the text files. These include the following
-  the speech data itself and other related details
-  the date and city at which the speech was given
+  - the speech data itself and other related details
+  - the date and city at which the speech was given
   
 In order to extract the date and city, we use the regex search function on the file name
 ```
