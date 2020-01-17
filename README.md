@@ -25,6 +25,7 @@ modi_df = pd.DataFrame(speeches_df)
 ```
 # Visualize speeches on a map
 
+![Visu1](images/speeches.png)
 
 Different colors represent the different years in which those speeches were given. 
   - red = 2014
