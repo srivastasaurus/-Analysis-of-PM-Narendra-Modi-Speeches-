@@ -16,9 +16,9 @@ def preprocess(x):
     return ' '.join(x)     
 
 folder = nltk.data.find(
-    '/Users/Sahit/Documents/GitHub/BBC_WorkSpace/PM_Speech_Analysis/Speeches/Speeches_Modi_Demo')
+    '/Users/Prerna/Documents/GitHub/BBC_WorkSpace/PM_Speech_Analysis/Speeches/PM_Speeches')
 
-path = '/Users/Sahit/Documents/GitHub/BBC_WorkSpace/PM_Speech_Analysis/Speeches/Speeches_Modi_Demo'
+path = '/Users/Prerna/Documents/GitHub/BBC_WorkSpace/PM_Speech_Analysis/Speeches/PM_Speeches'
 dirListing = os.listdir(path)
 editFiles = []
 for item in dirListing:
@@ -60,7 +60,7 @@ for filepath in editFiles:
     speech = {}
         
     place = re.search(r'_([a-zA-Z]+)_.txt$', filepath)
-    date = re.search( r'/Users/Sahit/Documents/GitHub/BBC_WorkSpace/PM_Speech_Analysis/Speeches/Speeches_Modi_Demo/\d+_(\d+)_([a-zA-Z]+)_(\d+)', filepath)
+    date = re.search( r'/Users/Prerna/Documents/GitHub/BBC_WorkSpace/PM_Speech_Analysis/Speeches/PM_Speeches/\d+_(\d+)_([a-zA-Z]+)_(\d+)', filepath)
     #print date.group(1), date.group(2), date.group(3)
     
     l = get_dictionary_word_list(filepath)
