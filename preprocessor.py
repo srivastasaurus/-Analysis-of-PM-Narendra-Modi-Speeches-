@@ -44,7 +44,7 @@ class preprocessor(object):
                 [word for sentence in corpusReader.sents() for word in sentence])
         
         place = re.search(r'_([a-zA-Z]+)_.txt$', path)
-        date = re.search( r'/Users/Prerna/Documents/GitHub/BBC_WorkSpace/PM_Speech_Analysis/Speeches/Speeches_Modi_Demo/\d+_(\d+)_([a-zA-Z]+)_(\d+)', path)
+        date = re.search( r'/Users/Prerna/Documents/GitHub/BBC_WorkSpace/PM_Speech_Analysis/Speeches/PM_Speeches/\d+_(\d+)_([a-zA-Z]+)_(\d+)', path)
     
         
         #date = re.search(r'^[0-9]+_(\w+)_(\w+)_(\d+)', path)
