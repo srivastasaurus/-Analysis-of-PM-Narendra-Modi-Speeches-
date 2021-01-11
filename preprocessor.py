@@ -96,7 +96,7 @@ class preprocessor(object):
         '''
             we convert each word into ascii values and see if the following values comes in
             
-            the range of the english alphabets and numericals
+            the range of the english alphabets and numericals 
         '''
         maxchar = ord(max(line))
         if 65 <= maxchar <= 90:
